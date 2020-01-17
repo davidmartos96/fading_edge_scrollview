@@ -153,8 +153,6 @@ class _FadingEdgeScrollViewState extends State<FadingEdgeScrollView> {
   void dispose() {
     super.dispose();
     _controller.removeListener(_onScroll);
-    _controller.dispose();
-    _controller = null;
   }
 
   void _onScroll() {
